@@ -5,14 +5,14 @@ from tkinter import Widget
 from django import forms
 from django.contrib.auth import get_user_model
 
-User =get_user_model
+User =get_user_model()
 
 
-class RegistrationForm (forms.ModelForms):
+class RegistrationForm (forms.ModelForm):
     class Meta:
         model = User
-        field =['username','password']
-        Widget ={
+        fields =['username','password','email','first_name','last_name']
+        widgets ={
             
             "password" : forms.PasswordInput()
         }

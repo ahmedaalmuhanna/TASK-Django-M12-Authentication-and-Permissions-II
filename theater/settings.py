@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     "crispy_forms",
     "movies",
     "shared",
-    "users"
+    "users",
 ]
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
